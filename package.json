@@ -1,0 +1,12 @@
+{
+  "name": "reactlearning",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/pooyan2012/reactlearning.git",
+  "author": "pooyan <permangenat_pooyan@yahoo.com>",
+  "license": "MIT",
+  "dependencies": {
+    "babel-preset-env": "1.5.2",
+    "babel-preset-react": "6.24.1"
+  }
+}
