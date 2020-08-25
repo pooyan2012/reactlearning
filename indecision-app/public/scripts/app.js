@@ -1,11 +1,34 @@
 "use strict";
 
 //JSX - JavaScript XML
-var template = React.createElement(
-  "p",
+
+var user = {
+  name: "Pooyan!",
+  age: 34,
+  locattion: "Tehran..."
+};
+
+var templateTwo = React.createElement(
+  "div",
   null,
-  "This is JSX from app.js."
+  React.createElement(
+    "h1",
+    null,
+    user.name
+  ),
+  React.createElement(
+    "p",
+    null,
+    "Age: ",
+    user.age
+  ),
+  React.createElement(
+    "p",
+    null,
+    "Location: ",
+    user.locattion
+  )
 );
 var appRoot = document.getElementById("app");
 
-ReactDOM.render(template, appRoot);
+ReactDOM.render(templateTwo, appRoot);
