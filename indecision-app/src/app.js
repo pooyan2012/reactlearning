@@ -1,9 +1,35 @@
-//JSX - JavaScript XML
+console.log("App is running...");
+
+var app = {
+  title: "Indecision App",
+  subtitle: "Put your life in the hands of computer",
+  options: ["One", "Two"],
+};
+
+var template = (
+  <div>
+    <h1>{app.title}</h1>
+    {app.subtitle && <p>{app.subtitle}</p>}
+    {app.options.length > 0 ? (
+      <p>
+        <b>Here are your options</b>
+      </p>
+    ) : (
+      <p>
+        <b>No options</b>
+      </p>
+    )}
+    <ol>
+      <li>Item one</li>
+      <li>Item two</li>
+    </ol>
+  </div>
+);
 
 var user = {
-    name: "Pooyan!",
-    age: 34,
-    location: "Tehran",
+  name: "Pooyan!",
+  age: 34,
+  location: "Tehran",
 };
 
 function getLocation(location) {
@@ -21,4 +47,4 @@ var templateTwo = (
 );
 var appRoot = document.getElementById("app");
 
-ReactDOM.render(templateTwo, appRoot);
+ReactDOM.render(template, appRoot);
