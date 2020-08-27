@@ -1,4 +1,4 @@
-//7. Conditional Rendering in JSX
+//9. ES6 Aside Arrow Functions
 console.log("App is running...");
 
 let app = {
@@ -21,7 +21,7 @@ let template = (
       </p>
     )}
     <ol>
-      <li>Item one</li>
+      <li>Item oneiuhi</li>
       <li>Item two</li>
     </ol>
   </div>
