@@ -1,13 +1,13 @@
 //7. Conditional Rendering in JSX
 console.log("App is running...");
 
-var app = {
+let app = {
   title: "Indecision App",
   subtitle: "Put your life in the hands of computer",
   options: ["One", "Two"],
 };
 
-var template = (
+let template = (
   <div>
     <h1>{app.title}</h1>
     {app.subtitle && <p>{app.subtitle}</p>}
@@ -27,7 +27,7 @@ var template = (
   </div>
 );
 
-var user = {
+let user = {
   name: "Pooyan!",
   age: 34,
   location: "Tehran",
@@ -39,13 +39,13 @@ function getLocation(location) {
   }
 }
 
-var templateTwo = (
+let templateTwo = (
   <div>
     <h1>{user.name ? user.name : "Anonymous"}</h1>
     {user.age && user.age > 18 && <p>Age: {user.age}</p>}
     {getLocation(user.location)}
   </div>
 );
-var appRoot = document.getElementById("app");
+let appRoot = document.getElementById("app");
 
 ReactDOM.render(template, appRoot);
