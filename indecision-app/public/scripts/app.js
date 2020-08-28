@@ -1,6 +1,6 @@
 "use strict";
 
-//9. ES6 Aside Arrow Functions
+//12. Manual Data Binding
 console.log("App is running...");
 
 var app = {
