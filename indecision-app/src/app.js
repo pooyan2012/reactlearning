@@ -1,4 +1,4 @@
-//12. Manual Data Binding
+//4. ES6 Classes Part II
 
 console.log("App is running...");
 
@@ -15,11 +15,15 @@ const onFormSubmit = (e) => {
   if (option) {
     app.options.push(option);
     e.target.elements.option.value = "";
-    console.log(option);
     renderApp();
   }
 };
 
+const onMakeDecision = () => {
+  const randomNum = Math.floor(Math.random() * app.options.length);
+  const option = app.options[randomNum];
+  alert(option);
+};
 const removeAll = () => {
   app.options = [];
   renderApp();
@@ -50,6 +54,9 @@ const renderApp = () => {
         <input type="text" name="option" />
         <button>Add Option</button>
         <button onClick={removeAll}>Remove All</button>
+        <button disabled={app.options.length === 0} onClick={onMakeDecision}>
+          What shoud i do?
+        </button>
       </form>
     </div>
   );

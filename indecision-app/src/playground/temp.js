@@ -1,32 +1,55 @@
-let count = 0;
+class Person {
+  constructor(name = "Anonymous", age = 0) {
+    this.name = name;
+    this.age = age;
+  }
 
-let addOne = () => {
-  count++;
-  renderCounterApp();
-};
+  getGreeting() {
+    return `Hi, I'm ${this.name}!`;
+  }
 
-let minusOne = () => {
-  count--;
-  renderCounterApp();
-};
+  getDescription() {
+    return `${this.name} is ${this.age} year(s) old.`;
+  }
+}
 
-let resetValue = () => {
-  count = 0;
-  renderCounterApp();
-};
+class Student extends Person {
+  constructor(name, age, major) {
+    super(name, age);
+    this.major = major;
+  }
 
-const appRoot = document.getElementById("app");
+  hasMajor() {
+    return !!this.major;
+  }
 
-const renderCounterApp = () => {
-  const templateTwo = (
-    <div>
-      <h1>Count: {count}</h1>
-      <button onClick={minusOne}>-1</button>
-      <button onClick={resetValue}>reset</button>
-      <button onClick={addOne}>+1</button>
-    </div>
-  );
-  ReactDOM.render(templateTwo, appRoot);
-};
+  getDescription() {
+    let description = super.getDescription();
 
-renderCounterApp();
+    if (this.major) {
+      description += `their major is ${this.major}`;
+    }
+    return description;
+  }
+}
+
+class Traveler extends Person {
+  constructor(name, age, homeLocation) {
+    super(name, age);
+    this.homeLocation = homeLocation;
+  }
+
+  getGreeting() {
+    let greeting = super.getGreeting();
+    if (this.homeLocation) {
+      greeting += ` I'm visiting from ${this.homeLocation}`;
+    }
+    return greeting;
+  }
+}
+
+const me = new Traveler("pooyan", 34, "Karaj");
+console.log(me.getGreeting());
+
+const other = new Traveler();
+console.log(other.getGreeting());
