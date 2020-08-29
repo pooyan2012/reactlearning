@@ -8,6 +8,7 @@
   "dependencies": {
     "babel-preset-env": "1.5.2",
     "babel-preset-react": "6.24.1",
+    "uuid": "^8.3.0",
     "yarn": "^1.22.4"
   }
 }
