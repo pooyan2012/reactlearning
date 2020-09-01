@@ -1,4 +1,4 @@
-//7. Component Props
+//8. Events & Methods
 class IndecisionApp extends React.Component {
   render() {
     const title = "Indecision";
@@ -28,22 +28,30 @@ class Header extends React.Component {
 }
 
 class Action extends React.Component {
+  handlePick() {
+    alert("clicked");
+  }
   render() {
     return (
       <div>
-        <button>What shoud i do?</button>
+        <button onClick={this.handlePick}>What shoud i do?</button>
       </div>
     );
   }
 }
 
 class Options extends React.Component {
+  handleRemoveAll() {
+    alert("handleRemoveAll");
+  }
+
   render() {
     return (
       <div>
-          {this.props.options.map((item) => (
-            <Option key={item} optionText={item}/>
-          ))}
+        <button onClick={this.handleRemoveAll}>Remove All</button>
+        {this.props.options.map((item) => (
+          <Option key={item} optionText={item} />
+        ))}
         <Option />
       </div>
     );
@@ -61,10 +69,21 @@ class Option extends React.Component {
 }
 
 class AddOption extends React.Component {
+  handleAddOption(e) {
+    e.preventDefault();
+    const option = e.target.elements.option.value.trim();
+
+    if (option) {
+      alert(option);
+    }
+  }
   render() {
     return (
       <div>
-        <p>AddOption component here</p>
+        <form onSubmit={this.handleAddOption}>
+          <input type="text" name="option" />
+          <button>Add</button>
+        </form>
       </div>
     );
   }
