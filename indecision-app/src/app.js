@@ -34,15 +34,20 @@ class Action extends React.Component {
   render() {
     return (
       <div>
-        <button onClick={this.handlePick}>What shoud i do?</button>
+        <button onClick={this.handlePick}>What should i do?</button>
       </div>
     );
   }
 }
 
 class Options extends React.Component {
+  constructor(props) {
+    super(props);
+    this.handleRemoveAll = this.handleRemoveAll.bind(this);
+  }
+
   handleRemoveAll() {
-    alert("handleRemoveAll");
+    alert(this.props.options);
   }
 
   render() {

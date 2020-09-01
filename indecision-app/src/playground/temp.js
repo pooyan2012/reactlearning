@@ -1,55 +1,36 @@
-class Person {
-  constructor(name = "Anonymous", age = 0) {
-    this.name = name;
-    this.age = age;
+class VisibilityToggle extends React.Component {
+  constructor(props) {
+    super(props);
+    this.handleToggleVisibility = this.handleToggleVisibility.bind(this);
+    this.state = {
+      visibility: false,
+    };
   }
 
-  getGreeting() {
-    return `Hi, I'm ${this.name}!`;
+  handleToggleVisibility() {
+    this.setState((prevState) => {
+      return {
+        visibility: !prevState.visibility,
+      };
+    });
   }
 
-  getDescription() {
-    return `${this.name} is ${this.age} year(s) old.`;
-  }
-}
+  render() {
+    return (
+      <div>
+        <h1>Visibility Toggle</h1>
+        <button onClick={this.handleToggleVisibility}>
+          {this.state.visibility ? "Hide details" : "Show details"}
+        </button>
 
-class Student extends Person {
-  constructor(name, age, major) {
-    super(name, age);
-    this.major = major;
-  }
-
-  hasMajor() {
-    return !!this.major;
-  }
-
-  getDescription() {
-    let description = super.getDescription();
-
-    if (this.major) {
-      description += `their major is ${this.major}`;
-    }
-    return description;
-  }
-}
-
-class Traveler extends Person {
-  constructor(name, age, homeLocation) {
-    super(name, age);
-    this.homeLocation = homeLocation;
-  }
-
-  getGreeting() {
-    let greeting = super.getGreeting();
-    if (this.homeLocation) {
-      greeting += ` I'm visiting from ${this.homeLocation}`;
-    }
-    return greeting;
+        {this.state.visibility && (
+          <div>
+            <p>Hey. These are some details you can now see!</p>
+          </div>
+        )}
+      </div>
+    );
   }
 }
 
-const me = new Traveler("pooyan", 34, "Karaj");
-console.log(me.getGreeting());
-
-const other = new Traveler();
-console.log(other.getGreeting());
+ReactDOM.render(<VisibilityToggle />, document.getElementById("app"));
