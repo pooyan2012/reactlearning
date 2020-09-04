@@ -1,5 +1,7 @@
-//5. ES6 importexport
-import { isAdult, canDrink } from "./person.js";
+//7. Importing npm Modules
 
-console.log("app is running!");
-console.log(`you are adult: ${isAdult(34)}. you can drink? ${canDrink(18)}`);
+import React from "react";
+import ReactDOM from "react-dom";
+
+const template = React.createElement("p", {}, "testing 123");
+ReactDOM.render(template, document.getElementById("app"));
