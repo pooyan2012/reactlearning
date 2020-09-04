@@ -5,10 +5,18 @@
   "repository": "https://github.com/pooyan2012/reactlearning.git",
   "author": "pooyan <permangenat_pooyan@yahoo.com>",
   "license": "MIT",
+  "scripts": {
+    "serve": "live-server indecision-app/public/ --port=1111",
+    "build":"webpack --watch",
+    "build-babel": "babel indecision-app/src/app.js --out-file=indecision-app/public/scripts/app.js --presets=env,react --watch"
+  },
   "dependencies": {
+    "babel-cli": "6.24.1",
     "babel-preset-env": "1.5.2",
     "babel-preset-react": "6.24.1",
+    "live-server": "^1.2.1",
     "uuid": "^8.3.0",
+    "webpack": "3.1.0",
     "yarn": "^1.22.4"
   }
 }
