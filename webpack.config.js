@@ -7,4 +7,13 @@ module.exports = {
     path: path.join(__dirname, "indecision-app", "public"),
     filename: "bundle.js",
   },
+  module: {
+    rules: [
+      {
+        loader: "babel-loader",
+        test: /\.js$/,
+        exclude: /node_modules/,
+      },
+    ],
+  },
 };

@@ -1,7 +1,6 @@
-//7. Importing npm Modules
-
-import React from "react";
+//9. One Component per File
 import ReactDOM from "react-dom";
+import React from "react";
+import IndecisionApp from "./components/IndecisionApp";
 
-const template = React.createElement("p", {}, "testing 123");
-ReactDOM.render(template, document.getElementById("app"));
+ReactDOM.render(<IndecisionApp />, document.getElementById("app"));
