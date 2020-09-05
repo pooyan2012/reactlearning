@@ -1,4 +1,4 @@
-//9. One Component per File
+//11. Webpack Dev Server
 import ReactDOM from "react-dom";
 import React from "react";
 import IndecisionApp from "./components/IndecisionApp";

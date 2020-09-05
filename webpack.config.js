@@ -1,6 +1,5 @@
 const path = require("path");
-//const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
-//console.log(path.join(__dirname,"indecision-app", "public"));
+
 module.exports = {
   entry: "./indecision-app/src/app.js",
   output: {
@@ -16,4 +15,6 @@ module.exports = {
       },
     ],
   },
+  devtool: "cheap-module-eval-source-map",
+  devServer: { contentBase: path.join(__dirname, "indecision-app", "public") },
 };
