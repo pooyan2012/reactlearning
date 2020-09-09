@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react';
 
 const Header = (props) => (
   <div className="header">
@@ -10,7 +10,7 @@ const Header = (props) => (
 );
 
 Header.defaultProps = {
-  title: "Indecision",
+  title: 'Indecision'
 };
 
 export default Header;

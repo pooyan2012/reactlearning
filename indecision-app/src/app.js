@@ -1,8 +1,8 @@
-//3. Architecture and Header Styles
-import ReactDOM from "react-dom";
-import React from "react";
-import IndecisionApp from "./components/IndecisionApp";
-import "../../node_modules/normalize.css/normalize.css";
-import "./styles/styles.scss";
+//6. Big Button & Options List
+import React from 'react';
+import ReactDOM from 'react-dom';
+import IndecisionApp from './components/IndecisionApp';
+import 'normalize.css/normalize.css';
+import './styles/styles.scss';
 
-ReactDOM.render(<IndecisionApp />, document.getElementById("app"));
+ReactDOM.render(<IndecisionApp />, document.getElementById('app'));
