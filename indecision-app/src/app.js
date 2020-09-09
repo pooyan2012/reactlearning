@@ -1,4 +1,4 @@
-//6. Big Button & Options List
+//8. Styling Option Item
 import React from 'react';
 import ReactDOM from 'react-dom';
 import IndecisionApp from './components/IndecisionApp';
