@@ -1,3 +1,4 @@
+/* ////////////////////uncomment for indecision-app/////////////////////
 const path = require("path");
 
 module.exports = {
@@ -18,4 +19,30 @@ module.exports = {
   },
   devtool: "cheap-module-eval-source-map",
   devServer: { contentBase: path.join(__dirname, "indecision-app", "public") },
+};
+*/
+
+const path = require("path");
+
+module.exports = {
+  entry: "./expensify-app/src/app.js",
+  output: {
+    path: path.join(__dirname, "expensify-app", "public"),
+    filename: "bundle.js",
+  },
+  module: {
+    rules: [
+      {
+        loader: "babel-loader",
+        test: /\.js$/,
+        exclude: /node_modules/,
+      },
+      { test: /\.s?css$/, use: ["style-loader", "css-loader", "sass-loader"] },
+    ],
+  },
+  devtool: "cheap-module-eval-source-map",
+  devServer: {
+    contentBase: path.join(__dirname, "expensify-app", "public"),
+    historyApiFallback: true,
+  },
 };
