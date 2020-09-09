@@ -1,4 +1,4 @@
-//8. Styling Option Item
+//9. Styling React-Modal
 import React from 'react';
 import ReactDOM from 'react-dom';
 import IndecisionApp from './components/IndecisionApp';
