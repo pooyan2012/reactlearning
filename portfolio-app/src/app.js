@@ -1,4 +1,4 @@
-//6. Linking Between Routes
+//9. Build It Router for Portfolio Site
 import React from "react";
 import ReactDOM from "react-dom";
 import AppRouter from "./routers/AppRouter";
