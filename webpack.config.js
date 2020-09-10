@@ -22,11 +22,11 @@ module.exports = {
 };
 */
 
- ////////////////////uncomment for expensify-app/////////////////////
+////////////////////uncomment for expensify-app/////////////////////
 const path = require("path");
 
 module.exports = {
-  entry: "./expensify-app/src/app.js",
+  entry: "./expensify-app/src/playground/redux-101.js",
   output: {
     path: path.join(__dirname, "expensify-app", "public"),
     filename: "bundle.js",
@@ -48,7 +48,7 @@ module.exports = {
   },
 };
 
- ////////////////////uncomment for portfolio-app/////////////////////
+////////////////////uncomment for portfolio-app/////////////////////
 /*const path = require("path");
 
 module.exports = {
