@@ -1,4 +1,4 @@
-//6. Linking Between Routes
+//6. ES6 Object Destructuring
 import React from "react";
 import ReactDOM from "react-dom";
 import AppRouter from "./routers/AppRouter";
