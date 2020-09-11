@@ -16,7 +16,10 @@ const setCount = ({ count }) => ({ type: "SET", count });
 
 const resetCount = () => ({ type: "RESET" });
 
-const store = createStore((state = { count: 0 }, aciton) => {
+//Reducers
+//1. Reducers are pure functions
+//2. Never change state or action
+const countReducer = (state = { count: 0 }, aciton) => {
   switch (aciton.type) {
     case "INCREMENT":
       return { count: state.count + aciton.incrementBy };
@@ -29,7 +32,9 @@ const store = createStore((state = { count: 0 }, aciton) => {
     default:
       return state;
   }
-});
+};
+
+const store = createStore(countReducer);
 
 const unsubscribe = store.subscribe(() => {
   console.log(store.getState());
@@ -39,9 +44,7 @@ const unsubscribe = store.subscribe(() => {
 //   type: "INCREMENT",
 //   incerementBy: 5,
 // });
-
 store.dispatch(incrementCount({ incrementBy: 5 }));
-
 store.dispatch(incrementCount());
 
 // store.dispatch({
@@ -52,7 +55,6 @@ store.dispatch(resetCount());
 // store.dispatch({
 //   type: "DECREMENT",
 // });
-
 store.dispatch(decrementCount());
 // store.dispatch({
 //   type: "DECREMENT",
@@ -64,5 +66,4 @@ store.dispatch(decrementCount({ decrementBy: 1000 }));
 //   type: "SET",
 //   count: 101,
 // });
-
-store.dispatch(setCount({ count: 8494 }));
+store.dispatch(setCount({ count: 101 }));

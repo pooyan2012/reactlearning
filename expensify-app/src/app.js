@@ -1,4 +1,4 @@
-//8. Refactoring and Organizing
+//11. ES6 Spread Operator in Reducers
 import React from "react";
 import ReactDOM from "react-dom";
 import AppRouter from "./routers/AppRouter";
