@@ -1,4 +1,4 @@
-//6. ES6 Object Destructuring
+//8. Refactoring and Organizing
 import React from "react";
 import ReactDOM from "react-dom";
 import AppRouter from "./routers/AppRouter";
