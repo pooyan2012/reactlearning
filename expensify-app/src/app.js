@@ -1,4 +1,4 @@
-//11. ES6 Spread Operator in Reducers
+//12. Spreading Objects
 import React from "react";
 import ReactDOM from "react-dom";
 import AppRouter from "./routers/AppRouter";
