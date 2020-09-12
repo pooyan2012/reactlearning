@@ -26,6 +26,10 @@ const editExpense = (id, updates) => ({
   updates,
 });
 // SET_TEXT_FILTER
+const setTextFilter = (text = "") => ({
+  type: "SET_TEXT_FILTER",
+  text 
+});
 // SORT_BY_DATE
 // SORT_BY_AMOUNT
 // SET_START_DATE
@@ -60,11 +64,15 @@ const filtersReducerDefaultState = {
   endDate: undefined,
 };
 const filtersReducers = (state = filtersReducerDefaultState, action) => {
-  switch (action.type) {
+  switch (action.type) {case 'SET_TEXT_FILTER':
+  return{
+    ...state,text:action.text
+  }
     default:
       return state;
   }
 };
+
 
 //store action
 const store = createStore(
@@ -86,8 +94,10 @@ const expense2 = store.dispatch(
 );
 
 store.dispatch(removeExpense({ id: expense1.expense.id }));
-
 store.dispatch(editExpense(expense2.expense.id, { amount: 500 }));
+
+store.dispatch(setTextFilter("rent"));
+store.dispatch(setTextFilter());
 
 const demoState = {
   expenses: [
@@ -106,13 +116,3 @@ const demoState = {
     endDate: undefined,
   },
 };
-
-const user = {
-  name: "pooyan",
-  age: 24,
-};
-
-console.log({
-  ...user,
-  location: "karaj",
-});
