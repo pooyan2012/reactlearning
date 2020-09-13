@@ -1,4 +1,4 @@
-//12. Spreading Objects
+//13. Wrapping up Our Reducers
 import React from "react";
 import ReactDOM from "react-dom";
 import AppRouter from "./routers/AppRouter";
