@@ -1,4 +1,4 @@
-//13. Wrapping up Our Reducers
+//15. Sorting Redux Data
 import { createStore, combineReducers } from "redux";
 import uuid from "uuid";
 

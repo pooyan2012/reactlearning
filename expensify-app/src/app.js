@@ -1,4 +1,4 @@
-//13. Wrapping up Our Reducers
+//15. Sorting Redux Data
 import React from "react";
 import ReactDOM from "react-dom";
 import AppRouter from "./routers/AppRouter";
