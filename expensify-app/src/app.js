@@ -1,3 +1,4 @@
+//3. The Higher Order Component
 import React from 'react';
 import ReactDOM from 'react-dom';
 import AppRouter from './routers/AppRouter';

@@ -26,7 +26,7 @@ module.exports = {
 const path = require("path");
 
 module.exports = {
-  entry: "./expensify-app/src/app.js",
+  entry: "./expensify-app/src/playground/hoc.js",
   output: {
     path: path.join(__dirname, "expensify-app", "public"),
     filename: "bundle.js",
