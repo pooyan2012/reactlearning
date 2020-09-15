@@ -1,4 +1,4 @@
-//3. The Higher Order Component
+//5. Rendering Individual Expenses
 import React from "react";
 import ReactDOM from "react-dom";
 import { Provider } from "react-redux";
