@@ -1,4 +1,4 @@
-//5. Rendering Individual Expenses
+//6. Controlled Inputs for Filters
 import React from "react";
 import ReactDOM from "react-dom";
 import { Provider } from "react-redux";
