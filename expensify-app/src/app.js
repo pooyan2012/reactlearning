@@ -1,4 +1,4 @@
-//6. Controlled Inputs for Filters
+//8. Creating Expense AddEdit Form
 import React from "react";
 import ReactDOM from "react-dom";
 import { Provider } from "react-redux";
