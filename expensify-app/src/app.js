@@ -1,4 +1,4 @@
-//9. Setting up a Date Picker
+//11. Wiring up Edit Expense
 import React from "react";
 import ReactDOM from "react-dom";
 import { Provider } from "react-redux";
