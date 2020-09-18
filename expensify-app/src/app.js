@@ -1,4 +1,4 @@
-//3. Testing Expenses Action Generators
+//4. Testing Filters Action Generators
 import React from "react";
 import ReactDOM from "react-dom";
 import { Provider } from "react-redux";
