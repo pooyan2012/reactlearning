@@ -1,4 +1,4 @@
-//6. Testing Filters Reducer
+//7. Testing Expenses Reducer
 import React from "react";
 import ReactDOM from "react-dom";
 import { Provider } from "react-redux";
