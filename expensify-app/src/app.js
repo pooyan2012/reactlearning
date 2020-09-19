@@ -1,4 +1,4 @@
-//4. Testing Filters Action Generators
+//6. Testing Filters Reducer
 import React from "react";
 import ReactDOM from "react-dom";
 import { Provider } from "react-redux";
