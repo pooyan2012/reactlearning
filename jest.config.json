@@ -1,6 +1,5 @@
 {
-  "setupFiles": [
-    "raf/polyfill",
-    "<rootDir>/expensify-app/src/tests/setupTests.js"
+  "snapshotSerializers": [
+    "../reactlearning/node_modules/enzyme-to-json/serializer"
   ]
 }
