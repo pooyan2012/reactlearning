@@ -1,4 +1,4 @@
-//7. Testing Expenses Reducer
+//10. Snapshot Testing with Dynamic Components
 import React from "react";
 import ReactDOM from "react-dom";
 import { Provider } from "react-redux";
