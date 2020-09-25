@@ -1,4 +1,4 @@
-//11. New Feature Workflow
+//12. Build It Adding Total Selector
 import React from "react";
 import ReactDOM from "react-dom";
 import { Provider } from "react-redux";
