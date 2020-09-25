@@ -1,4 +1,4 @@
-//12. Build It Adding Total Selector
+//13. Build It Adding Summary Component
 import React from "react";
 import ReactDOM from "react-dom";
 import { Provider } from "react-redux";
