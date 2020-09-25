@@ -33,7 +33,7 @@ module.exports = (env) => {
   return {
     entry: "./expensify-app/src/app.js",
     output: {
-      path: path.join(__dirname, "expensify-app", "public"),
+      path: path.join(__dirname, "expensify-app", "public", "dist"),
       filename: "bundle.js",
     },
     module: {
@@ -69,6 +69,7 @@ module.exports = (env) => {
     devServer: {
       contentBase: path.join(__dirname, "expensify-app", "public"),
       historyApiFallback: true,
+      publicPath: "/dist/",
     },
   };
 };
