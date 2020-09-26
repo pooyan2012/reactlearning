@@ -1,4 +1,4 @@
-//13. Build It Adding Summary Component
+//2. Getting Firebase
 import React from "react";
 import ReactDOM from "react-dom";
 import { Provider } from "react-redux";
@@ -10,6 +10,7 @@ import getVisibleExpenses from "./selectors/expenses";
 import "normalize.css/normalize.css";
 import "./styles/styles.scss";
 import "react-dates/lib/css/_datepicker.css";
+import "./firebase/firebase";
 
 const store = configureStore();
 
