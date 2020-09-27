@@ -1,4 +1,4 @@
-//8. Fetching Data From Firebase
+//10. Array Data in Firebase Part II
 import React from "react";
 import ReactDOM from "react-dom";
 import { Provider } from "react-redux";
