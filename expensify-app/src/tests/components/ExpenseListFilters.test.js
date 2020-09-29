@@ -3,7 +3,7 @@ import { shallow } from 'enzyme';
 import moment from 'moment';
 import { ExpenseListFilters } from '../../components/ExpenseListFilters';
 import { filters, altFilters } from '../fixtures/filters';
-import setupTest from '../setupTests'
+import setupTests from '../setupTests'
 
 let setTextFilter, sortByDate, sortByAmount, setStartDate, setEndDate, wrapper;
 
@@ -71,7 +71,7 @@ test('should handle date changes', () => {
   expect(setEndDate).toHaveBeenLastCalledWith(endDate);
 });
 
-test('should handle date focus changes', () => {
+test('hould handle date focus changes', () => {
   const calendarFocused = 'endDate';
   wrapper.find('DateRangePicker').prop('onFocusChange')(calendarFocused);
   expect(wrapper.state('calendarFocused')).toBe(calendarFocused);

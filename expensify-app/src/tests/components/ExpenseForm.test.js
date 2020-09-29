@@ -3,7 +3,7 @@ import { shallow } from 'enzyme';
 import moment from 'moment';
 import ExpenseForm from '../../components/ExpenseForm';
 import expenses from '../fixtures/expenses';
-import setupTest from '../setupTests'
+import setupTests from '../setupTests'
 
 test('should render ExpenseForm correctly', () => {
   const wrapper = shallow(<ExpenseForm />);

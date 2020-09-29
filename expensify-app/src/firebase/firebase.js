@@ -18,34 +18,36 @@ try {
 
 const database = firebase.database();
 
-database.ref().set({
-  name: 'Andrew Mead',
-  age: 26,
-  stressLevel: 6,
-  job: {
-    title: 'Software developer',
-    company: 'Google'
-  },
-  location: {
-    city: 'Philadelphia',
-    country: 'United States'
-  }
-}).then(() => {
-  console.log('Data is saved!');
-}).catch((e) => {
-  console.log('This failed.', e);
-});
+export { firebase, database as default };
 
-database.ref().update({
-  stressLevel: 9,
-  'job/company': 'Amazon',
-  'location/city': 'Seattle'
-});
+// database.ref().set({
+//   name: 'Andrew Mead',
+//   age: 26,
+//   stressLevel: 6,
+//   job: {
+//     title: 'Software developer',
+//     company: 'Google'
+//   },
+//   location: {
+//     city: 'Philadelphia',
+//     country: 'United States'
+//   }
+// }).then(() => {
+//   console.log('Data is saved!');
+// }).catch((e) => {
+//   console.log('This failed.', e);
+// });
 
-// database.ref()
-//   .remove()
-//   .then(() => {
-//     console.log('Data was removed');
-//   }).catch((e) => {
-//     console.log('Did not remove data', e);
-//   });
+// database.ref().update({
+//   stressLevel: 9,
+//   'job/company': 'Amazon',
+//   'location/city': 'Seattle'
+// });
+
+// // database.ref()
+// //   .remove()
+// //   .then(() => {
+// //     console.log('Data was removed');
+// //   }).catch((e) => {
+// //     console.log('Did not remove data', e);
+// //   });
