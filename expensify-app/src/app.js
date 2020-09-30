@@ -1,4 +1,4 @@
-//3. Testing Async Redux Actions Part I
+//4. Testing Async Redux Actions Part II
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { Provider } from 'react-redux';
