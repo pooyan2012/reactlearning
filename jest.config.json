@@ -1,5 +1,6 @@
 {
   "snapshotSerializers": [
     "../reactlearning/node_modules/enzyme-to-json/serializer"
-  ]
+  ],
+  "setupFiles": ["<rootDir>/expensify-app/src/tests/setupTests.js"]
 }
