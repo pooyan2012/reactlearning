@@ -1,4 +1,4 @@
-//9. Remove Expense
+//10. Update Expense
 import React from "react";
 import ReactDOM from "react-dom";
 import { Provider } from "react-redux";
