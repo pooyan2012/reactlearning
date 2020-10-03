@@ -1,4 +1,4 @@
-//2. Login Page and Google Authentication
+//3. Logging Out
 import React from "react";
 import ReactDOM from "react-dom";
 import { Provider } from "react-redux";
