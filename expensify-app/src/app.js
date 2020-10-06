@@ -1,4 +1,4 @@
-//5. The Auth Reducer
+//6. Private Only Routes
 import React from "react";
 import ReactDOM from "react-dom";
 import { Provider } from "react-redux";
