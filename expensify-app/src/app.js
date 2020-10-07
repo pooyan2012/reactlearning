@@ -1,4 +1,4 @@
-//8. Private Firebase Data
+//9. Data Validation and Deployment
 import React from "react";
 import ReactDOM from "react-dom";
 import { Provider } from "react-redux";
