@@ -1,4 +1,4 @@
-//9. Data Validation and Deployment
+//3. Styling Buttons
 import React from "react";
 import ReactDOM from "react-dom";
 import { Provider } from "react-redux";
