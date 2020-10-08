@@ -40,7 +40,7 @@ module.exports = (env) => {
   const CSSExtract = new ExtractTextPlugin("styles.css");
 
   return {
-    entry: "./expensify-app/src/app.js",
+    entry: ["babel-polyfill", "./expensify-app/src/app.js"],
     output: {
       path: path.join(__dirname, "expensify-app", "public", "dist"),
       filename: "bundle.js",
