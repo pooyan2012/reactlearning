@@ -1,4 +1,4 @@
-//12. Final Deployment
+//8. Cleaning up Effects
 import React from "react";
 import ReactDOM from "react-dom";
 import { Provider } from "react-redux";
