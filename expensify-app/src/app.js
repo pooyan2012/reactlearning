@@ -1,4 +1,4 @@
-//3. Styling Buttons
+//12. Final Deployment
 import React from "react";
 import ReactDOM from "react-dom";
 import { Provider } from "react-redux";
