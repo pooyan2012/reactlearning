@@ -1,4 +1,4 @@
-//8. Cleaning up Effects
+//13. Creating Custom Hooks
 import React from "react";
 import ReactDOM from "react-dom";
 import { Provider } from "react-redux";
